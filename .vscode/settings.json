@@ -1,0 +1,36 @@
+{
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "eslint.useFlatConfig": true,
+      // Enable ESLint
+      "eslint.enable": true,
+      "eslint.autoFixOnSave":true,
+
+      // Automatically fix problems on save
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+      },
+  
+      // Use the default formatter (Prettier or ESLint) for different file types
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+  
+      // Enable linting for .vue files
+      "eslint.validate": [
+          "javascript",
+          "javascriptreact",
+          "vue",
+          "typescript",
+          "typescriptreact"
+      ],
+  
+      // Format on save
+    "editor.formatOnSave": true,
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    }
+  }
+  

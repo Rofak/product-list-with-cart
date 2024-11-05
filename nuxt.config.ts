@@ -5,7 +5,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/ui'],
   ssr:false,
-  app: {
-    baseURL: '/product-list-with-cart/'  // Replace with your repo name
+  $production:{
+    app:{
+      baseURL: '/product-list-with-cart/',  // Replace with your repo name
+      buildAssetsDir: "assets",
+    }
   }
 })

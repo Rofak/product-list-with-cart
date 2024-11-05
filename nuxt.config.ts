@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   ssr:false,
   $production:{
     app:{
-      baseURL: '/product-list-with-cart/',  // Replace with your repo name
+      baseURL: '/product-list-with-cart/',
       buildAssetsDir: "assets",
     }
   },

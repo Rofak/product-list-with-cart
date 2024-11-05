@@ -1,43 +1,46 @@
 <script setup>
+const config = useRuntimeConfig();
+const isProduction = config.public.isProduction;
+const baseURLImage = isProduction ? config.public.baseURL : '.';
 const foods = useState("foods", () => {
     return [
         {
-            image: "/images/image-baklava-desktop.jpg",
+            image: `${baseURLImage}/images/image-baklava-desktop.jpg`,
             title: "Hello",
             description: "FSDAF",
             price: 12.34,
             isAddToCart: false
         },
         {
-            image: "/images/image-brownie-desktop.jpg",
+            image: `${baseURLImage}/images/image-brownie-desktop.jpg`,
             title: "HdaSD",
             description: "FSD",
             price: 23.1,
             isAddToCart: false
         },
         {
-            image: "/images/image-cake-desktop.jpg",
+            image: `${baseURLImage}/images/image-cake-desktop.jpg`,
             title: "HdaSD",
             description: "FSD",
             price: 23.1,
             isAddToCart: false
         },
         {
-            image: "/images/image-creme-brulee-desktop.jpg",
+            image: `${baseURLImage}/images/image-creme-brulee-desktop.jpg`,
             title: "HdaSD",
             description: "FSD",
             price: 23.1,
             isAddToCart: false
         },
         {
-            image: "/images/image-macaron-desktop.jpg",
+            image: `${baseURLImage}/images/image-macaron-desktop.jpg`,
             title: "HdaSD",
             description: "FSD",
             price: 23.1,
             isAddToCart: false
         },
         {
-            image: "/images/image-panna-cotta-desktop.jpg",
+            image: `${baseURLImage}/images/image-panna-cotta-desktop.jpg`,
             title: "HdaSD",
             description: "FSD",
             price: 23.1,

@@ -14,6 +14,6 @@ git add -A
 git commit -m 'deploy'
 
 # push to the `gh-pages` branch
-git push -f git@github.com:Rofak/product-list-with-cart.git master:gh-pages
+git push -f git@github.com:Rofak/product-list-with-cart.git gh-pages:gh-pages
 
 cd -

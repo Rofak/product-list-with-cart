@@ -20,18 +20,20 @@ const props = defineProps({
     isAddToCart: {
         type: Boolean,
         default: false
+    },
+    count: {
+        type: Number,
+        default: 0
     }
 })
-const emit = defineEmits(["onAddToCart"])
-
-const count = ref(1);
+const emit = defineEmits(["onAddToCart", "increment", "decrement"])
 
 const increment = () => {
-    count.value += 1;
-};
+    emit("increment")
+}
 
 const decrement = () => {
-    if (count.value > 0) count.value -= 1;
+    emit("decrement")
 };
 
 const onAddToCart = () => {
